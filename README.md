@@ -53,7 +53,32 @@
   + 가중치(W)와 편향(b) 설정  
   + 비용 함수 정의 : 평균 제곱 오차
   + 옵티마이저 정의 : 경사 하강법(optim.SGD() 사용)
-  + 모델 학습
+
+- 모델 학습
+```
+  Epoch    0/20 hypothesis: tensor([0., 0., 0., 0., 0.]) Cost: 29661.800781
+  Epoch    1/20 hypothesis: tensor([67.2578, 80.8397, 79.6523, 86.7394, 61.6605]) Cost: 9298.520508
+  Epoch    2/20 hypothesis: tensor([104.9128, 126.0990, 124.2466, 135.3015,  96.1821]) Cost: 2915.712402
+  Epoch    3/20 hypothesis: tensor([125.9942, 151.4381, 149.2133, 162.4896, 115.5097]) Cost: 915.040527
+  Epoch    4/20 hypothesis: tensor([137.7967, 165.6247, 163.1911, 177.7112, 126.3307]) Cost: 287.936096
+  Epoch    5/20 hypothesis: tensor([144.4044, 173.5674, 171.0168, 186.2332, 132.3891]) Cost: 91.371063
+  Epoch    6/20 hypothesis: tensor([148.1035, 178.0143, 175.3980, 191.0042, 135.7812]) Cost: 29.758249
+  Epoch    7/20 hypothesis: tensor([150.1744, 180.5042, 177.8509, 193.6753, 137.6805]) Cost: 10.445267
+  Epoch    8/20 hypothesis: tensor([151.3336, 181.8983, 179.2240, 195.1707, 138.7440]) Cost: 4.391237
+  Epoch    9/20 hypothesis: tensor([151.9824, 182.6789, 179.9928, 196.0079, 139.3396]) Cost: 2.493121
+  Epoch   10/20 hypothesis: tensor([152.3454, 183.1161, 180.4231, 196.4765, 139.6732]) Cost: 1.897688
+  Epoch   11/20 hypothesis: tensor([152.5485, 183.3609, 180.6640, 196.7389, 139.8602]) Cost: 1.710552
+  Epoch   12/20 hypothesis: tensor([152.6620, 183.4982, 180.7988, 196.8857, 139.9651]) Cost: 1.651416
+  Epoch   13/20 hypothesis: tensor([152.7253, 183.5752, 180.8742, 196.9678, 140.0240]) Cost: 1.632369
+  Epoch   14/20 hypothesis: tensor([152.7606, 183.6184, 180.9164, 197.0138, 140.0571]) Cost: 1.625924
+  Epoch   15/20 hypothesis: tensor([152.7802, 183.6427, 180.9399, 197.0395, 140.0759]) Cost: 1.623420
+  Epoch   16/20 hypothesis: tensor([152.7909, 183.6565, 180.9530, 197.0538, 140.0865]) Cost: 1.622152
+  Epoch   17/20 hypothesis: tensor([152.7968, 183.6643, 180.9603, 197.0618, 140.0927]) Cost: 1.621262
+  Epoch   18/20 hypothesis: tensor([152.7999, 183.6688, 180.9644, 197.0661, 140.0963]) Cost: 1.620501
+  Epoch   19/20 hypothesis: tensor([152.8014, 183.6715, 180.9665, 197.0686, 140.0985]) Cost: 1.619757
+  Epoch   20/20 hypothesis: tensor([152.8020, 183.6731, 180.9677, 197.0699, 140.0999]) Cost: 1.619046
+```
+
 ---
 
 ## nn_Module
@@ -65,7 +90,31 @@
   + nn.Linear() 모듈을 이용해 다중 선형 회귀 클래스 모델 선언(MultivariateLinearRegressionModel())
   + 비용 함수 정의 : 평균 제곱 오차 함수(F.mse_loss() 사용)
   + 옵티마이저 정의 : 경사 하강법(optim.SGD() 사용)
-  + 모델 학습
+ 
+- 모델 학습
+```
+  Epoch    0/2000 Cost: 31667.597656
+  Epoch  100/2000 Cost: 0.225993
+  Epoch  200/2000 Cost: 0.223911
+  Epoch  300/2000 Cost: 0.221941
+  Epoch  400/2000 Cost: 0.220059
+  Epoch  500/2000 Cost: 0.218271
+  Epoch  600/2000 Cost: 0.216575
+  Epoch  700/2000 Cost: 0.214950
+  Epoch  800/2000 Cost: 0.213413
+  Epoch  900/2000 Cost: 0.211952
+  Epoch 1000/2000 Cost: 0.210560
+  Epoch 1100/2000 Cost: 0.209232
+  Epoch 1200/2000 Cost: 0.207967
+  Epoch 1300/2000 Cost: 0.206761
+  Epoch 1400/2000 Cost: 0.205619
+  Epoch 1500/2000 Cost: 0.204522
+  Epoch 1600/2000 Cost: 0.203484
+  Epoch 1700/2000 Cost: 0.202485
+  Epoch 1800/2000 Cost: 0.201542
+  Epoch 1900/2000 Cost: 0.200635
+  Epoch 2000/2000 Cost: 0.199769
+```
 
 ---
 
@@ -80,7 +129,17 @@
   + 선형 회귀 클래스 모델 선언(nn.Linear())
   + 비용 함수 정의 : 평균 제곱 오차 함수(F.mse_loss() 사용)
   + 옵티마이저 정의 : 경사 하강법(optim.SGD() 사용)
-  + 모델 학습
+ 
+- 모델 학습
+```
+  Epoch    0/20 Batch 1/3 Cost: 37210.574219
+  Epoch    0/20 Batch 2/3 Cost: 16463.394531
+  Epoch    0/20 Batch 3/3 Cost: 2130.966309
+  ...중략...
+  Epoch   20/20 Batch 1/3 Cost: 12.638277
+  Epoch   20/20 Batch 2/3 Cost: 7.614962
+  Epoch   20/20 Batch 3/3 Cost: 35.864082
+```
 
 ---
 
@@ -120,7 +179,17 @@
   + nn.Linear()과 nn.Sigmoid()를 이용해 로지스틱 회귀 클래스 모델 선언(BinaryClassifier())
   + 비용 함수 정의 : 평균 제곱 오차(F.mse_loss() 사용)
   + 옵티마이저 정의 : 경사 하강법(optim.SGD() 사용)
-  + 모델 학습
+ 
+- 모델 학습
+```
+  Epoch    0/1000 Cost: 0.539713 Accuracy 83.33%
+  Epoch   10/1000 Cost: 0.614853 Accuracy 66.67%
+  Epoch   20/1000 Cost: 0.441875 Accuracy 66.67%
+  ...중략...
+  Epoch  980/1000 Cost: 0.020219 Accuracy 100.00%
+  Epoch  990/1000 Cost: 0.020029 Accuracy 100.00%
+  Epoch 1000/1000 Cost: 0.019843 Accuracy 100.00%
+```
 
 ---
 
@@ -135,7 +204,21 @@
   + 가중치(W)와 편향(b) 선언
   + 비용 함수 정의 : 크로스 엔트로피 함수(F.cross_entropy() 사용)
   + 옵티마이저 정의 : 경사 하강법(optim.SGD() 사용)
-  + 모델 학습
+
+- 모델 학습
+```
+  Epoch    0/1000 Cost: 1.098612
+  Epoch  100/1000 Cost: 0.761050
+  Epoch  200/1000 Cost: 0.689991
+  Epoch  300/1000 Cost: 0.643229
+  Epoch  400/1000 Cost: 0.604117
+  Epoch  500/1000 Cost: 0.568256
+  Epoch  600/1000 Cost: 0.533922
+  Epoch  700/1000 Cost: 0.500291
+  Epoch  800/1000 Cost: 0.466908
+  Epoch  900/1000 Cost: 0.433507
+  Epoch 1000/1000 Cost: 0.399962
+```
 
 ---
 
